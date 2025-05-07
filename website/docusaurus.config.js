@@ -209,6 +209,13 @@ module.exports = {
                 },
             };
         },
+        [
+            "@twilio-labs/docusaurus-plugin-segment",
+            {
+                writeKey: process.env.SEGMENT_TOKEN,
+                allowedInDev: false,
+            },
+        ],
     ],
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */ ({
